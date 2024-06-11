@@ -1,20 +1,51 @@
 {
-    "name": "Rebar Calculator",
-    "short_name": "RebarCalc",
+    "name": "EquiCalc",
+    "short_name": "EquiCalc",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f8f9fa",
     "theme_color": "#007bff",
     "icons": [
         {
-            "src": "icon-180x180.png",
+            "src": "assets/img/29.png",
+            "sizes": "29x29",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/40.png",
+            "sizes": "40x40",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/57.png",
+            "sizes": "57x57",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/58.png",
+            "sizes": "58x58",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/60.png",
+            "sizes": "60x60",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/80.png",
+            "sizes": "80x80",
+            "type": "image/png",
+            "purpose": "any maskable"
+          },
+          {
+            "src": "assets/img/180.png",
             "sizes": "180x180",
-            "type": "image/180"
-        },
-        {
-            "src": "icon-1024x1024.png",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/1024.png",
             "sizes": "1024x1024",
-            "type": "image/1024"
-        }
+            "type": "image/png"
+          }
     ]
 }
