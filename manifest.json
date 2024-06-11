@@ -3,7 +3,7 @@
     "short_name": "EquiCalc",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#f8f9fa",
+    "background_color": "#ffffff",
     "theme_color": "#007bff",
     "icons": [
       {
