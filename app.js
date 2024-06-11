@@ -15,15 +15,23 @@ function calculate() {
     const areaTotalOriginal = originalQuantity * calcularArea(originalDiameter);
 
     // Calculando a área total das barras de substituição
-    const areaTotalSubstituicao = replacementDiameters.reduce((total, diametro, index) => {
-        return total + (replacementQuantities[index] * calcularArea(diametro));
-    }, 0);
+    const areasSubstituicao = replacementDiameters.map((diametro, index) => {
+        return replacementQuantities[index] * calcularArea(diametro);
+    });
+
+    const areaTotalSubstituicao = areasSubstituicao.reduce((total, area) => total + area, 0);
 
     // Exibindo os resultados
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = `
         <p>Área total das barras originais: ${areaTotalOriginal.toFixed(2)} mm²</p>
         <p>Área total das barras de substituição: ${areaTotalSubstituicao.toFixed(2)} mm²</p>
+        <p>Detalhes das áreas das barras de substituição:</p>
+        <ul>
+            ${replacementDiameters.map((diametro, index) => `
+                <li>Diâmetro: ${diametro} mm, Quantidade: ${replacementQuantities[index]}, Área total: ${areasSubstituicao[index].toFixed(2)} mm²</li>
+            `).join('')}
+        </ul>
     `;
 }
 
