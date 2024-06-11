@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal Bar Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Cal Bar Calculator</h1>
+        <div class="input-group">
+            <label for="originalDiameter">Diâmetro das Barras Originais (mm):</label>
+            <input type="number" id="originalDiameter" required>
+        </div>
+        <div class="input-group">
+            <label for="originalQuantity">Quantidade das Barras Originais:</label>
+            <input type="number" id="originalQuantity" required>
+        </div>
+        <div class="input-group">
+            <label for="replacementDiameters">Diâmetros das Barras de Substituição (mm, separados por vírgulas):</label>
+            <input type="text" id="replacementDiameters" required>
+        </div>
+        <div class="input-group">
+            <label for="replacementQuantities">Quantidades das Barras de Substituição (separadas por vírgulas):</label>
+            <input type="text" id="replacementQuantities" required>
+        </div>
+        <button onclick="calculate()">Calcular</button>
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
